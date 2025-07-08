@@ -11,6 +11,6 @@ spec:
       - name: pillowfight
         image: sequoiatools/pillowfight
         command: ["cbc-pillowfight",
-                  "-U", "couchbase://cb-src-srv/cb-src?select_bucket=true",
+                  "-U", "couchbase://cb-src-srv/dbsrc?select_bucket=true",
                   "-I", "100000", "-B", "100", "-m", "100", "-M", "300", "-c", "-1", "-r", "100", "-t", "4", "-u", "Administrator", "-P", "<PASSWORD>"]
       restartPolicy: Never

@@ -194,7 +194,7 @@ kubectl apply -f admin_secrets.yaml
 ```
 
 ### Installation
-Please open and review the `cluster.yaml` file.
+Please open and review the `clusters.yaml` file.
 
 The part with the `volumeClaimTemplates` is describing AKS related setup, please feel free to change accordingly.
 
@@ -213,7 +213,7 @@ Get the opeator's pod name and copy it.
 kubectl get pods | grep operator | grep -v admission | awk '{print $1}'
 ```
 
-Open a new terminal window and start the logs moniroring:
+Open a new terminal window and start the logs monitoring:
 ```
 kubectl logs <operator-pod-name> -f
 ```
